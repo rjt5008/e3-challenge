@@ -31,17 +31,27 @@ span.date { color: $e3-blue; text-transform: uppercase; font-weight:bold;}
    li{
       a{
       text-transform: uppercase;
-      color: $e3-blue;
+      color: $black;
       font-weight: bold;
       }
     }
   }
-
-h1 {
-  color: $e3-blue; text-transform: uppercase;
-  a{
-    @extend h1;
+#views-bootstrap-events-page-1 {
+  h3 {
+  font-size: 30px; color: $black;
   }
+  img {
+  -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
+  clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
+  }
+}
+
+.datebox {
+  background: #fff;
+}
+.header-image {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 43% 100%, 0 30%, 0 0);
+  clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 43% 100%, 0 30%, 0 0);
 }
 
 body {margin-top: 0 !important;}

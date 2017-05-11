@@ -1,0 +1,63 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+// Set the proper directory for the Bootstrap Glyphicon font.
+$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+// Custom colors
+
+$e3-blue:                 #15cadb;
+$e3-pink:                 #f41361;
+$black:                   #000;
+
+$navbar-height:                    71px;
+$navbar-link-color:                $black;
+
+body {margin-top:0px;}
+#logo {margin-top:10px;}
+#bar { -webkit-clip-path: polygon(15% 0, 100% 0%, 100% 100%, 18% 100%);
+clip-path: polygon(15% 0, 100% 0%, 100% 100%, 18% 100%);
+ background-color:  $e3-blue;
+ height:40px;}
+
+span.date { color: $e3-blue; text-transform: uppercase; font-weight:bold;}
+.container {overflow: hidden;}
+.navbar-nav{
+   li{
+      a{
+      text-transform: uppercase;
+      color: $black;
+      font-weight: bold;
+      }
+    }
+  }
+ #feature { margin-top:15px;}
+#views-bootstrap-events-page-1 {
+  h3 {
+  font-size: 30px; color: $black;
+  }
+  img {
+  -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
+  clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
+  }
+}
+.view-header {
+  img {
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 25% 100%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 25% 100%, 0 0);
+  }
+}
+.datebox {
+  background: #fff;
+}
+
+
