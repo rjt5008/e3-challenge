@@ -22,14 +22,16 @@ $black:                   #000;
 $navbar-height:                    71px;
 $navbar-link-color:                $black;
 
-body {margin-top:0px;}
-#logo {margin-top:10px;}
+
 #bar { -webkit-clip-path: polygon(15% 0, 100% 0%, 100% 100%, 18% 100%);
 clip-path: polygon(15% 0, 100% 0%, 100% 100%, 18% 100%);
  background-color:  $e3-blue;
  height:40px;}
 
-span.date { color: $e3-blue; text-transform: uppercase; font-weight:bold;}
+h1 { color: #e3-blue;}
+h2 { }
+h3 {color: $black; font-weight: normal;}
+
 .container {overflow: hidden;}
 .navbar-nav{
    li{
@@ -40,24 +42,34 @@ span.date { color: $e3-blue; text-transform: uppercase; font-weight:bold;}
       }
     }
   }
- #feature { margin-top:15px;}
+
+#feature { margin-top:15px;}
+
 #views-bootstrap-events-page-1 {
-  h3 {
-  font-size: 30px; color: $black;
-  }
   img {
   -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
   clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
   }
 }
+
+.datebox {
+background: #fff;
+position: relative;
+top: 30px;
+left: 230px;
+width: 121px;
+height: 50px;
+z-index:12912;
+  -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
+  clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
+}
+.month { color: $e4-blue; text-transform: uppsercase; font-weight:bold;}
+.day {}
 .view-header {
   img {
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 25% 100%, 0 0);
     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 25% 100%, 0 0);
   }
-}
-.datebox {
-  background: #fff;
 }
 
 
