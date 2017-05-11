@@ -1,0 +1,47 @@
+/**
+ * Default Variables.
+ *
+ * Modify this file to provide default Bootstrap Framework variables. The
+ * Bootstrap Framework will not override any variables defined here because it
+ * uses the `!default` flag which will only set their default if not already
+ * defined here.
+ *
+ * You can copy existing variables directly from the following file:
+ * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+// Set the proper directory for the Bootstrap Glyphicon font.
+$icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
+
+// Custom colors
+
+$e3-blue:                 #15cadb;
+$e3-pink:                 #f41361;
+$black:                   #000;
+
+$navbar-height:                    71px;
+$navbar-link-color:                $black;
+$navbar-link-hover-color:          $e3-blue;
+
+#bar { height: 40px; background-color:  $e3-blue;}
+
+span.date { color: $e3-blue; text-transform: uppercase; font-weight:bold;}
+.container {overflow: hidden;}
+.navbar-nav{
+   li{
+      a{
+      text-transform: uppercase;
+      color: $e3-blue;
+      font-weight: bold;
+      }
+    }
+  }
+
+h1 {
+  color: $e3-blue; text-transform: uppercase;
+  a{
+    @extend h1;
+  }
+}
+
+body {margin-top: 0 !important;}
