@@ -18,7 +18,7 @@ $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
 $e3-blue:                 #15cadb;
 $e3-pink:                 #f41361;
 $black:                   #000;
-
+$headings-font-family:             FontAwesome;
 $navbar-height:                    71px;
 $navbar-link-color:                $black;
 
@@ -32,7 +32,7 @@ $navbar-link-color:                $black;
 
 h1 { color: #e3-blue;}
 h2 { }
-h3 {color: $black; font-weight: normal;}
+h3 {color: $black; font-weight: bold; margin-top:5px;}
 
 .container {overflow: hidden;}
 .navbar-nav{
@@ -44,9 +44,9 @@ h3 {color: $black; font-weight: normal;}
       }
     }
   }
-
+#caption { left:20px;position: relative; top: -180px;}
 #feature { margin-top:15px;}
-
+.time {text-transform: uppercase; color: $e3-blue;font-weight: bold;}
 #views-bootstrap-events-page-1 {
   img {
   -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
@@ -55,6 +55,8 @@ h3 {color: $black; font-weight: normal;}
   }
 }
 
+.link  {margin-top:20px;border-top: 3px solid $e3-pink;color: $e3-pink; font-weight:bold;}
+.link a { color: $e3-pink;}
 .datebox {
 background: #fff;
 position: relative;

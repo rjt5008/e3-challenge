@@ -3,7 +3,7 @@ type: theme
 base theme: bootstrap
 
 name: 'Kaytee Dog'
-description: 'Custom theme built for Elevated Third's code review based on Bootstrap framework Sass source files and named after my Dog'
+description: 'Custom sub-theme built for Elevated Thirds code review based on Bootstrap framework Sass source files and named after my Dog'
 package: 'Bootstrap'
 
 regions:

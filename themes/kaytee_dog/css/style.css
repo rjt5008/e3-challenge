@@ -22,7 +22,8 @@ h1 {
 
 h3 {
   color: #000;
-  font-weight: normal; }
+  font-weight: bold;
+  margin-top: 5px; }
 
 .container {
   overflow: hidden; }
@@ -32,13 +33,32 @@ h3 {
   color: #000;
   font-weight: bold; }
 
+#caption {
+  left: 20px;
+  position: relative;
+  top: -180px; }
+
 #feature {
   margin-top: 15px; }
+
+.time {
+  text-transform: uppercase;
+  color: #15cadb;
+  font-weight: bold; }
 
 #views-bootstrap-events-page-1 img {
   -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
   clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
   clip-path: url("#image-shape"); }
+
+.link {
+  margin-top: 20px;
+  border-top: 3px solid #f41361;
+  color: #f41361;
+  font-weight: bold; }
+
+.link a {
+  color: #f41361; }
 
 .datebox {
   background: #fff;
@@ -1200,7 +1220,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  font-family: FontAwesome;
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
