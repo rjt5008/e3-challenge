@@ -24,9 +24,11 @@ $navbar-link-color:                $black;
 
 
 #bar { -webkit-clip-path: polygon(15% 0, 100% 0%, 100% 100%, 18% 100%);
-clip-path: polygon(15% 0, 100% 0%, 100% 100%, 18% 100%);
+ clip-path: polygon(15% 0, 100% 0%, 100% 100%, 18% 100%);
  background-color:  $e3-blue;
- height:40px;}
+ height:40px;
+ clip-path:("#bar-shape");
+ }
 
 h1 { color: #e3-blue;}
 h2 { }
@@ -49,6 +51,7 @@ h3 {color: $black; font-weight: normal;}
   img {
   -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
   clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
+  clip-path: url("#image-shape");
   }
 }
 
@@ -63,12 +66,13 @@ z-index:12912;
   -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
   clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
 }
-.month { color: $e4-blue; text-transform: uppsercase; font-weight:bold;}
-.day {}
+.month { color: $e3-blue; text-transform: uppsercase; font-weight:bold;}
+
 .view-header {
   img {
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 25% 100%, 0 0);
     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 25% 100%, 0 0);
+    clip-path: url("#clip-shape");
   }
 }
 

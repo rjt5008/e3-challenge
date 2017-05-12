@@ -14,7 +14,8 @@
   -webkit-clip-path: polygon(15% 0, 100% 0%, 100% 100%, 18% 100%);
   clip-path: polygon(15% 0, 100% 0%, 100% 100%, 18% 100%);
   background-color: #15cadb;
-  height: 40px; }
+  height: 40px;
+  clip-path: "#bar-shape"; }
 
 h1 {
   color: #e3-blue; }
@@ -36,24 +37,29 @@ h3 {
 
 #views-bootstrap-events-page-1 img {
   -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
-  clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%); }
+  clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
+  clip-path: url("#image-shape"); }
 
 .datebox {
-  color: #15cadb;
-  text-transform: uppercase;
-  font-weight: bold;
   background: #fff;
   position: relative;
   top: 30px;
   left: 230px;
   width: 121px;
   height: 50px;
-  font-size: 30px;
-  z-index: 12912; }
+  z-index: 12912;
+  -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
+  clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%); }
+
+.month {
+  color: #15cadb;
+  text-transform: uppsercase;
+  font-weight: bold; }
 
 .view-header img {
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 25% 100%, 0 0);
-  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 25% 100%, 0 0); }
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 25% 100%, 0 0);
+  clip-path: url("#clip-shape"); }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)

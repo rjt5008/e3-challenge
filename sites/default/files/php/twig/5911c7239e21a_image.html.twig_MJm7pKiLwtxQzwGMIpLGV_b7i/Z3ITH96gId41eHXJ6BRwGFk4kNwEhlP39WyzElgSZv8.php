@@ -1,7 +1,7 @@
 <?php
 
-/* themes/kaytee_dog/templates/system/image.html.twig */
-class __TwigTemplate_56b75592a719fc28e62c63ecf7b3585b273632b9d1854778ec258981a1c0c7e8 extends Twig_Template
+/* themes/kaytee_dog/templates/field/image.html.twig */
+class __TwigTemplate_6e1ddab6f5142199523ef955734aa2e6a2b2a159887ae37d40f66534be608881 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
@@ -15,14 +15,14 @@ class __TwigTemplate_56b75592a719fc28e62c63ecf7b3585b273632b9d1854778ec258981a1c
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("set" => 15);
-        $filters = array();
+        $tags = array("set" => 14);
+        $filters = array("clean_class" => 15);
         $functions = array();
 
         try {
             $this->env->getExtension('sandbox')->checkSecurity(
                 array('set'),
-                array(),
+                array('clean_class'),
                 array()
             );
         } catch (Twig_Sandbox_SecurityError $e) {
@@ -39,12 +39,19 @@ class __TwigTemplate_56b75592a719fc28e62c63ecf7b3585b273632b9d1854778ec258981a1c
             throw $e;
         }
 
-        // line 15
-        $context["classes"] = array(0 => (($this->getAttribute($this->getAttribute(        // line 16
-(isset($context["theme"]) ? $context["theme"] : null), "settings", array()), "image_shape", array())) ? ($this->getAttribute($this->getAttribute((isset($context["theme"]) ? $context["theme"] : null), "settings", array()), "image_shape", array())) : ("")), 1 => (($this->getAttribute($this->getAttribute(        // line 17
-(isset($context["theme"]) ? $context["theme"] : null), "settings", array()), "image_responsive", array())) ? ("") : ("")));
-        // line 19
-        echo "<img";
+        // line 14
+        $context["classes"] = array(0 => ((        // line 15
+(isset($context["style_name"]) ? $context["style_name"] : null)) ? (("image-style-" . \Drupal\Component\Utility\Html::getClass((isset($context["style_name"]) ? $context["style_name"] : null)))) : ("")));
+        // line 18
+        echo "<svg width=\"0\" height=\"0\">
+  <defs>
+    <clipPath id=\"image-shape\" clipPathUnits=\"objectBoundingBox\">
+      <polygon points=\"0 .01, 1.00 0.01, 1.00 .55, 0 .38\" />
+    </clipPath>
+  </defs>
+</svg>
+<img";
+        // line 25
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["attributes"]) ? $context["attributes"] : null), "addClass", array(0 => (isset($context["classes"]) ? $context["classes"] : null)), "method"), "html", null, true));
         echo " />
 ";
@@ -52,7 +59,7 @@ class __TwigTemplate_56b75592a719fc28e62c63ecf7b3585b273632b9d1854778ec258981a1c
 
     public function getTemplateName()
     {
-        return "themes/kaytee_dog/templates/system/image.html.twig";
+        return "themes/kaytee_dog/templates/field/image.html.twig";
     }
 
     public function isTraitable()
@@ -62,7 +69,7 @@ class __TwigTemplate_56b75592a719fc28e62c63ecf7b3585b273632b9d1854778ec258981a1c
 
     public function getDebugInfo()
     {
-        return array (  47 => 19,  45 => 17,  44 => 16,  43 => 15,);
+        return array (  55 => 25,  46 => 18,  44 => 15,  43 => 14,);
     }
 
     public function getSource()
@@ -70,21 +77,27 @@ class __TwigTemplate_56b75592a719fc28e62c63ecf7b3585b273632b9d1854778ec258981a1c
         return "{#
 /**
  * @file
- * Default theme implementation of an image.
+ * Theme override of an image.
  *
  * Available variables:
  * - attributes: HTML attributes for the img tag.
  * - style_name: (optional) The name of the image style applied.
  *
- * @ingroup templates
- *
  * @see template_preprocess_image()
  */
 #}
-{% set classes = [
-  theme.settings.image_shape ? theme.settings.image_shape,
-  theme.settings.image_responsive ? '',
-] %}
+{%
+set classes = [
+  style_name ? 'image-style-' ~ style_name|clean_class,
+]
+%}
+<svg width=\"0\" height=\"0\">
+  <defs>
+    <clipPath id=\"image-shape\" clipPathUnits=\"objectBoundingBox\">
+      <polygon points=\"0 .01, 1.00 0.01, 1.00 .55, 0 .38\" />
+    </clipPath>
+  </defs>
+</svg>
 <img{{ attributes.addClass(classes) }} />
 ";
     }

@@ -1,0 +1,25 @@
+{#
+/**
+ * @file
+ * Theme override of an image.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the img tag.
+ * - style_name: (optional) The name of the image style applied.
+ *
+ * @see template_preprocess_image()
+ */
+#}
+{%
+set classes = [
+  style_name ? 'image-style-' ~ style_name|clean_class,
+]
+%}
+<svg width="0" height="0">
+  <defs>
+    <clipPath id="image-shape" clipPathUnits="objectBoundingBox">
+      <polygon points="0 .01, 1.00 0.01, 1.00 .55, 0 .38" />
+    </clipPath>
+  </defs>
+</svg>
+<img{{ attributes.addClass(classes) }} />

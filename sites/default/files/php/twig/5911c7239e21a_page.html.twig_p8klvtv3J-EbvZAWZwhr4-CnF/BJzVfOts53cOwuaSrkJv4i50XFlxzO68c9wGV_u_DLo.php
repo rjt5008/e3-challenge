@@ -19,7 +19,7 @@ class __TwigTemplate_95788c89f8b105a43b9bfa63d6128af3ad2b0cebacde5d5bac3c45f3e17
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("set" => 59, "block" => 72, "if" => 106);
+        $tags = array("set" => 59, "block" => 79, "if" => 113);
         $filters = array();
         $functions = array();
 
@@ -49,11 +49,18 @@ class __TwigTemplate_95788c89f8b105a43b9bfa63d6128af3ad2b0cebacde5d5bac3c45f3e17
         echo "
 <div class=\"container\">
   <div class=\"row\">
-    <div id=\"logo\" class=\"col-sm-1 col-md-4 col-lg-2\"><img src=\"/e3_challenge-d8/themes/kaytee_dog/logo.png\"></a></div> <!-- logo -->
-    <div id=\"bar\" class=\"col-sm-3 col-md-8 col-lg-10\">       </div>
+    <div id=\"logo\" class=\"col-sm-1 col-md-2 col-lg-1\"><img src=\"/e3_challenge-d8/themes/kaytee_dog/logo.png\"></a></div> <!-- logo -->
+    <div id=\"bar\" class=\"col-sm-3 col-md-10 col-lg-11\">    <svg width=\"0\" height=\"0\">
+  <defs>
+    <clipPath id=\"bar-shape\" clipPathUnits=\"objectBoundingBox\">
+      <polygon points=\".15 0, 1.00 0.0, 1.00 1.00, .18 1.00\"/>
+    </clipPath>
+  </defs>
+</svg>
+   </div>
 
     <div class=\"col-md-8 col-lg-8 pull-right\">";
-        // line 66
+        // line 73
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "navigation", array()), "html", null, true));
         echo "</div> <!-- col md 5 --></div> <!-- nav -->
   </div> <!-- row -->
@@ -61,99 +68,99 @@ class __TwigTemplate_95788c89f8b105a43b9bfa63d6128af3ad2b0cebacde5d5bac3c45f3e17
 
 </div>
 ";
-        // line 72
+        // line 79
         $this->displayBlock('main', $context, $blocks);
-        // line 105
+        // line 112
         echo "
 ";
-        // line 106
+        // line 113
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer", array())) {
-            // line 107
+            // line 114
             echo "  ";
             $this->displayBlock('footer', $context, $blocks);
         }
     }
 
-    // line 72
+    // line 79
     public function block_main($context, array $blocks = array())
     {
-        // line 73
+        // line 80
         echo "  <div role=\"main\" class=\"main-container ";
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["container"]) ? $context["container"] : null), "html", null, true));
         echo " js-quickedit-main-content\">
     <div class=\"row\">
 
       ";
-        // line 77
+        // line 84
         echo "      ";
-        // line 78
-        $context["content_classes"] = array(0 => ((($this->getAttribute(        // line 79
-(isset($context["page"]) ? $context["page"] : null), "sidebar_first", array()) && $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array()))) ? ("col-sm-6") : ("")), 1 => ((($this->getAttribute(        // line 80
-(isset($context["page"]) ? $context["page"] : null), "sidebar_first", array()) && twig_test_empty($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array())))) ? ("col-sm-9") : ("")), 2 => ((($this->getAttribute(        // line 81
-(isset($context["page"]) ? $context["page"] : null), "sidebar_second", array()) && twig_test_empty($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_first", array())))) ? ("col-sm-9") : ("")), 3 => (((twig_test_empty($this->getAttribute(        // line 82
-(isset($context["page"]) ? $context["page"] : null), "sidebar_first", array())) && twig_test_empty($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array())))) ? ("col-sm-12") : ("")));
         // line 85
+        $context["content_classes"] = array(0 => ((($this->getAttribute(        // line 86
+(isset($context["page"]) ? $context["page"] : null), "sidebar_first", array()) && $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array()))) ? ("col-sm-6") : ("")), 1 => ((($this->getAttribute(        // line 87
+(isset($context["page"]) ? $context["page"] : null), "sidebar_first", array()) && twig_test_empty($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array())))) ? ("col-sm-9") : ("")), 2 => ((($this->getAttribute(        // line 88
+(isset($context["page"]) ? $context["page"] : null), "sidebar_second", array()) && twig_test_empty($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_first", array())))) ? ("col-sm-9") : ("")), 3 => (((twig_test_empty($this->getAttribute(        // line 89
+(isset($context["page"]) ? $context["page"] : null), "sidebar_first", array())) && twig_test_empty($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array())))) ? ("col-sm-12") : ("")));
+        // line 92
         echo "      <section";
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["content_attributes"]) ? $context["content_attributes"] : null), "addClass", array(0 => (isset($context["content_classes"]) ? $context["content_classes"] : null)), "method"), "html", null, true));
         echo ">
 
         ";
-        // line 88
+        // line 95
         echo "        ";
         $this->displayBlock('content', $context, $blocks);
-        // line 92
+        // line 99
         echo "      </section>
 
       ";
-        // line 95
+        // line 102
         echo "      ";
         if ($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array())) {
-            // line 96
+            // line 103
             echo "        ";
             $this->displayBlock('sidebar_second', $context, $blocks);
-            // line 101
+            // line 108
             echo "      ";
         }
-        // line 102
+        // line 109
         echo "    </div>
   </div>
 ";
     }
 
-    // line 88
+    // line 95
     public function block_content($context, array $blocks = array())
     {
-        // line 89
+        // line 96
         echo "          <a id=\"main-content\"></a>
           ";
-        // line 90
+        // line 97
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "content", array()), "html", null, true));
         echo "
         ";
     }
 
-    // line 96
+    // line 103
     public function block_sidebar_second($context, array $blocks = array())
     {
-        // line 97
+        // line 104
         echo "          <aside class=\"col-sm-3\" role=\"complementary\">
             ";
-        // line 98
+        // line 105
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "sidebar_second", array()), "html", null, true));
         echo "
           </aside>
         ";
     }
 
-    // line 107
+    // line 114
     public function block_footer($context, array $blocks = array())
     {
-        // line 108
+        // line 115
         echo "    <footer class=\"footer ";
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, (isset($context["container"]) ? $context["container"] : null), "html", null, true));
         echo "\" role=\"contentinfo\">
       ";
-        // line 109
+        // line 116
         echo $this->env->getExtension('sandbox')->ensureToStringAllowed($this->env->getExtension('drupal_core')->escapeFilter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "footer", array()), "html", null, true));
         echo "
     </footer>
@@ -172,7 +179,7 @@ class __TwigTemplate_95788c89f8b105a43b9bfa63d6128af3ad2b0cebacde5d5bac3c45f3e17
 
     public function getDebugInfo()
     {
-        return array (  157 => 109,  152 => 108,  149 => 107,  142 => 98,  139 => 97,  136 => 96,  130 => 90,  127 => 89,  124 => 88,  118 => 102,  115 => 101,  112 => 96,  109 => 95,  105 => 92,  102 => 88,  96 => 85,  94 => 82,  93 => 81,  92 => 80,  91 => 79,  90 => 78,  88 => 77,  81 => 73,  78 => 72,  72 => 107,  70 => 106,  67 => 105,  65 => 72,  57 => 66,  49 => 60,  47 => 59,);
+        return array (  164 => 116,  159 => 115,  156 => 114,  149 => 105,  146 => 104,  143 => 103,  137 => 97,  134 => 96,  131 => 95,  125 => 109,  122 => 108,  119 => 103,  116 => 102,  112 => 99,  109 => 95,  103 => 92,  101 => 89,  100 => 88,  99 => 87,  98 => 86,  97 => 85,  95 => 84,  88 => 80,  85 => 79,  79 => 114,  77 => 113,  74 => 112,  72 => 79,  64 => 73,  49 => 60,  47 => 59,);
     }
 
     public function getSource()
@@ -239,8 +246,15 @@ class __TwigTemplate_95788c89f8b105a43b9bfa63d6128af3ad2b0cebacde5d5bac3c45f3e17
 
 <div class=\"container\">
   <div class=\"row\">
-    <div id=\"logo\" class=\"col-sm-1 col-md-4 col-lg-2\"><img src=\"/e3_challenge-d8/themes/kaytee_dog/logo.png\"></a></div> <!-- logo -->
-    <div id=\"bar\" class=\"col-sm-3 col-md-8 col-lg-10\">       </div>
+    <div id=\"logo\" class=\"col-sm-1 col-md-2 col-lg-1\"><img src=\"/e3_challenge-d8/themes/kaytee_dog/logo.png\"></a></div> <!-- logo -->
+    <div id=\"bar\" class=\"col-sm-3 col-md-10 col-lg-11\">    <svg width=\"0\" height=\"0\">
+  <defs>
+    <clipPath id=\"bar-shape\" clipPathUnits=\"objectBoundingBox\">
+      <polygon points=\".15 0, 1.00 0.0, 1.00 1.00, .18 1.00\"/>
+    </clipPath>
+  </defs>
+</svg>
+   </div>
 
     <div class=\"col-md-8 col-lg-8 pull-right\">{{ page.navigation }}</div> <!-- col md 5 --></div> <!-- nav -->
   </div> <!-- row -->
