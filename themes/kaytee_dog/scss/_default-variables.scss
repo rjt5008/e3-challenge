@@ -27,7 +27,7 @@ $navbar-link-color:                $black;
  clip-path: polygon(15% 0, 100% 0%, 100% 100%, 18% 100%);
  background-color:  $e3-blue;
  height:40px;
- clip-path:("#bar-shape");
+ clip-path:url("#bar-shape");
  }
 
 h1 { color: #e3-blue;}
@@ -59,11 +59,12 @@ h3 {color: $black; font-weight: bold; margin-top:5px;}
 .link a { color: $e3-pink;}
 .datebox {
 background: #fff;
-position: relative;
-top: 30px;
-left: 230px;
-width: 121px;
-height: 50px;
+position: absolute;
+height: 120px;
+padding:5px;
+right: 20px;
+top: 24px;
+width: 110px;
 z-index:12912;
   -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
   clip-path: polygon(0 1%, 100% 0%, 100% 55%, 0 38%);
