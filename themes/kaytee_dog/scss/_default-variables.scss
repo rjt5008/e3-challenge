@@ -30,8 +30,8 @@ $navbar-link-color:                $black;
  clip-path:url("#bar-shape");
  }
 
-h1 { color: #e3-blue;}
-h2 { }
+h1 { color: $e3-blue;}
+
 h3 {color: $black; font-weight: bold; margin-top:5px;}
 
 .container {overflow: hidden;}
